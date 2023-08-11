@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--title-->
+    <title>Todo-List</title>
+
+    <!--it is used to connect the css file with html file-->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todolis">
+        <!-- heading -->
+        <h2>
+          Todo-List
+
+          <!-- image -->
+          <img src="/todo.png" alt="todo" width="40px" height="40px" />
+        </h2>
+        <!-- creating search box with ADD button -->
+        <div class="row">
+          <input
+            type="text"
+            id="input-box"
+            placeholder="Add your text here...."
+          />
+
+          <!--button-->
+          <button onclick="addTask()">Add</button>
+        </div>
+
+        <!-- make the list -->
+        <ul id="list-container">
+          <!-- <li class="checked">task1</li>
+          <li>task2</li>
+          <li>task3</li> -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- link javascript file with html-->
+    <script src="/script.js"></script>
+  </body>
+</html>
